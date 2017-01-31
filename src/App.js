@@ -3,6 +3,7 @@ import {Toolbar, ToolbarGroup, ToolbarSeparator, RaisedButton} from 'material-ui
 import {scrollToTarget} from './SmoothLink'
 
 import './App.scss'
+import logo from './image/Vavanti.png'
 
 const BigRaisedButton = props => (
 	<RaisedButton
@@ -21,6 +22,10 @@ class App extends Component {
 			<main className='App'>
 				<Toolbar className='toolbar'>
 					<ToolbarGroup>
+						    <img src={logo}/>
+					</ToolbarGroup>
+					
+					<ToolbarGroup>
 						<RaisedButton
 							label='Page 1'
 							primary={true}
@@ -32,6 +37,7 @@ class App extends Component {
 						<RaisedButton
 							label='Page 2'
 							onClick={() => scrollToTarget('#page-2')}
+							/>
 						/>
 					</ToolbarGroup>
 				</Toolbar>
@@ -51,6 +57,7 @@ class App extends Component {
 
 						<BigRaisedButton
 							label='Gallery????'
+							secondary={true}
 						/>
 					</div>
 				</section>
