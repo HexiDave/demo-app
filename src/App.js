@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Toolbar, ToolbarGroup, ToolbarSeparator, RaisedButton } from 'material-ui'
+import {Toolbar, ToolbarGroup, ToolbarSeparator, RaisedButton} from 'material-ui'
 import {scrollToTarget} from './SmoothLink'
 
 import './App.scss'
@@ -23,8 +23,8 @@ class App extends Component {
 					<ToolbarGroup>
 						<RaisedButton
 							label='Page 1'
-						    primary={true}
-						    onClick={() => scrollToTarget('#page-1')}
+							primary={true}
+							onClick={() => scrollToTarget('#page-1')}
 						/>
 
 						<ToolbarSeparator/>
@@ -37,15 +37,21 @@ class App extends Component {
 				</Toolbar>
 
 				<section id='page-1'>
-					<BigRaisedButton
-						label='Hello!'
-					    primary={true}
-					/>
+					<div id='buttons'>
+						<BigRaisedButton
+							label='Hello!'
+							primary={true}
+						/>
 
-					<BigRaisedButton
-						label='Yo!'
-						primary={true}
-					/>
+						<BigRaisedButton
+							label='Yo!'
+							primary={true}
+						/>
+
+						<BigRaisedButton
+							label='Whatever!'
+						/>
+					</div>
 				</section>
 
 				<section id='page-2'>
