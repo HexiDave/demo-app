@@ -63,9 +63,13 @@ class App extends Component {
 				</section>
 
 				<section id='page-2'>
-					<p id='AboutUs'>
-						This is a paragraph
+					<div id='about-us-div'>
+					<h3>About Us</h3>
+					<p>
+						Avanti has been around since the dark ages and we've been through a lot. This definitely proves we've got the gonads to handle whatever you little shits throw at us...
 					</p>
+					</div>
+
 				</section>
 			</main>
 		);
