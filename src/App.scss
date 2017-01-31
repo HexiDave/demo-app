@@ -14,6 +14,10 @@ $toolbarPadding: 60px;
 		border-bottom: 1px solid rgba(128, 128, 128, 0.31);
 	}
 
+	.large-button, .large-button > button, .large-button > button > div > div {
+		border-radius: 8px !important;
+	}
+
 	> section {
 		height: calc(100% - #{$toolbarPadding});
 		padding-top: $toolbarPadding;
@@ -26,6 +30,12 @@ $toolbarPadding: 60px;
 	#page-1 {
 		background: url('./image/gta-5-wallpaper-20.jpg') no-repeat center center;
 		background-size: cover;
+		color: white;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
 	}
 
 	#page-2 {

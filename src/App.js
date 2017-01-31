@@ -4,6 +4,15 @@ import {scrollToTarget} from './SmoothLink'
 
 import './App.scss'
 
+const BigRaisedButton = props => (
+	<RaisedButton
+		className='large-button'
+		labelStyle={{fontSize: '40px', lineHeight: '64px', paddingLeft: '32px', paddingRight: '32px'}}
+		style={{height: '64px'}}
+		{...props}
+	/>
+);
+
 class App extends Component {
 
 	render() {
@@ -28,9 +37,15 @@ class App extends Component {
 				</Toolbar>
 
 				<section id='page-1'>
-					<p>
-						Page 1
-					</p>
+					<BigRaisedButton
+						label='Hello!'
+					    primary={true}
+					/>
+
+					<BigRaisedButton
+						label='Yo!'
+						primary={true}
+					/>
 				</section>
 
 				<section id='page-2'>
