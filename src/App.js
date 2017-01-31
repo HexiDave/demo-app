@@ -1,29 +1,22 @@
-import React, { Component } from 'react';
-import {RaisedButton, AppBar} from 'material-ui'
+import React, {Component} from 'react';
 import './App.scss'
 
 class App extends Component {
-  state = {
-    clicked: false
-  };
 
-  handleClick() {
-    this.setState({clicked: true});
-  }
+	render() {
 
-  render() {
+		return (
+			<div className='App'>
+				<section id='page-1'>
+					Page 1
+				</section>
 
-    const {clicked} = this.state;
-
-    return (
-      <div className='App'>
-        <AppBar
-          title='Title!'
-        />
-        <RaisedButton label={clicked ? 'Thanks!' : 'Click me!'} primary={clicked} disabled={clicked} onClick={this.handleClick.bind(this)}/>
-      </div>
-    );
-  }
+				<section id='page-2'>
+					Page 2
+				</section>
+			</div>
+		);
+	}
 }
 
 export default App;
