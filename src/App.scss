@@ -1,8 +1,22 @@
+$toolbarPadding: 60px;
+
 .App {
 	height: 100%;
+	position: relative;
+
+	.toolbar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(17,17,17,0.22) !important;
+		justify-content: flex-end !important;
+		border-bottom: 1px solid rgba(128, 128, 128, 0.31);
+	}
 
 	> section {
-		height: 100%;
+		height: calc(100% - #{$toolbarPadding});
+		padding-top: $toolbarPadding;
 	}
 
 	p:first-of-type {

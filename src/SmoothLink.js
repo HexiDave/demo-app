@@ -1,4 +1,7 @@
 import React from 'react'
+
+export const scrollToTarget = target => document.querySelector(target).scrollIntoView({behavior: 'smooth'});
+
 class SmoothLink extends React.Component {
 	static propTypes = {
 		target: React.PropTypes.string.isRequired
@@ -9,7 +12,7 @@ class SmoothLink extends React.Component {
 
 		const {target} = this.props;
 
-		document.querySelector(target).scrollIntoView({behavior: 'smooth'});
+		scrollToTarget(target);
 	}
 
 	render() {
