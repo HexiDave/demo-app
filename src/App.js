@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Toolbar, ToolbarGroup, ToolbarSeparator, RaisedButton} from 'material-ui'
 import {scrollToTarget} from './SmoothLink'
+import logo from './image/Vavanti.png'
 
 import './App.scss'
-import logo from './image/Vavanti.png'
 
 const BigRaisedButton = props => (
 	<RaisedButton
@@ -21,11 +21,12 @@ class App extends Component {
 		return (
 			<main className='App'>
 				<Toolbar className='toolbar'>
-					<ToolbarGroup>
-						    <img src={logo}/>
+					<ToolbarGroup style={{width: '100%'}}>
+						<img src={logo} id='logo'/>
 					</ToolbarGroup>
-					
+
 					<ToolbarGroup>
+
 						<RaisedButton
 							label='Page 1'
 							primary={true}
@@ -37,7 +38,6 @@ class App extends Component {
 						<RaisedButton
 							label='Page 2'
 							onClick={() => scrollToTarget('#page-2')}
-							/>
 						/>
 					</ToolbarGroup>
 				</Toolbar>
@@ -64,7 +64,7 @@ class App extends Component {
 
 				<section id='page-2'>
 					<p id='AboutUs'>
-					This is a paragraph
+						This is a paragraph
 					</p>
 				</section>
 			</main>
