@@ -22,7 +22,7 @@ class App extends Component {
 			<main className='App'>
 				<Toolbar className='toolbar'>
 					<ToolbarGroup style={{width: '100%'}}>
-						<img src={logo} id='logo'/>
+						<img src={logo} onClick={() => scrollToTarget('#page-1')}/>
 					</ToolbarGroup>
 
 					<ToolbarGroup>
@@ -47,7 +47,6 @@ class App extends Component {
 						<BigRaisedButton
 							label='Character'
 							primary={true}
-							onClick={() => scrollToTarget('#page-2')}
 						/>
 
 						<BigRaisedButton
