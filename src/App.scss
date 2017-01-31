@@ -5,6 +5,10 @@
 		height: 100%;
 	}
 
+	p:first-of-type {
+		margin-top: 0;
+	}
+
 	#page-1 {
 		background: url('./image/gta-5-wallpaper-20.jpg') no-repeat center center;
 		background-size: cover;
