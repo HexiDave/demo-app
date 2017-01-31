@@ -39,24 +39,25 @@ class App extends Component {
 				<section id='page-1'>
 					<div id='buttons'>
 						<BigRaisedButton
-							label='Hello!'
+							label='Characters'
+							primary={true}
+							onClick={() => scrollToTarget('#page-2')}
+						/>
+
+						<BigRaisedButton
+							label='Forums'
 							primary={true}
 						/>
 
 						<BigRaisedButton
-							label='Yo!'
-							primary={true}
-						/>
-
-						<BigRaisedButton
-							label='Whatever!'
+							label='Gallery'
 						/>
 					</div>
 				</section>
 
 				<section id='page-2'>
-					<p>
-						Page 2
+					<p id='AboutUs'>
+					This is a paragraph
 					</p>
 				</section>
 			</main>

@@ -12,6 +12,7 @@ $toolbarPadding: 60px;
 		background-color: rgba(17,17,17,0.22) !important;
 		justify-content: flex-end !important;
 		border-bottom: 1px solid rgba(128, 128, 128, 0.31);
+		z-index:1000;
 	}
 
 	.large-button, .large-button > button, .large-button > button > div > div {
@@ -43,10 +44,19 @@ $toolbarPadding: 60px;
 			flex-direction: column;
 			justify-content: space-around;
 			align-items: center;
+			background-color: rgba(10, 10, 10, 0.60);
+			border-radius: 12px;
+			padding: 24px;
+	
 		}
+		#AboutUs {
+			font-size:32px;
+			color:white;
+
+			}
 	}
 
 	#page-2 {
-		background-color: #42817e;
+		background-color: lightskyblue;
 	}
 }
