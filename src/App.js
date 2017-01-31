@@ -39,7 +39,7 @@ class App extends Component {
 				<section id='page-1'>
 					<div id='buttons'>
 						<BigRaisedButton
-							label='Characters'
+							label='Character'
 							primary={true}
 							onClick={() => scrollToTarget('#page-2')}
 						/>
@@ -50,7 +50,7 @@ class App extends Component {
 						/>
 
 						<BigRaisedButton
-							label='Gallery'
+							label='Gallery????'
 						/>
 					</div>
 				</section>
